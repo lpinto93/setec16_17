@@ -20,7 +20,7 @@
 		<div id="menu">
 			<ul>
 				<li><a href="index.html" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Statistics</a></li>
+				<li><a href="statistics.php" accesskey="2" title="">Statistics</a></li>
                 <li class="current_page_item"><a href="heatmap.php" accesskey="3" title="">Heatmaps</a></li>
 				<li><a href="#" accesskey="4" title="">About Us</a></li>
 			</ul>
