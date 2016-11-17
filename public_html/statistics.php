@@ -28,9 +28,5 @@
 	</div>
 </div>
 
-<div id="stat-gen">
-</div>
-
-
 </body>
 </html>

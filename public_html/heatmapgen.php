@@ -1,6 +1,6 @@
 <?php
-$address = '172.30.4.167';
-$port = 21112;
+$address = '192.168.50.138';
+$port = 20501;
 
 
 $socket = socket_create(AF_INET, SOCK_STREAM, getprotobyname('tcp'));
@@ -30,8 +30,12 @@ if($status !== FALSE)
 		$next = socket_read($socket, 21112);
         $rcvmessage .= $next;
   //  }
-
-    echo $rcvmessage;
+    
+    //header('Content-type: image/png');
+    //echo file_get_contents("$rcvmessage");
+    
+    
+    //echo $rcvmessage;
 }
 else
 {
@@ -46,3 +50,13 @@ echo file_get_contents("http://www.huntelectric.com/images/docs/Articles/Hunt_El
 */
 
 ?>
+
+    <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h2>Heatmap</h2>
+        <img src="<?php echo $rcvmessage ?>" alt="Mountain View">
+
+        </body>
+        </html>
