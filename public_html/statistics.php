@@ -36,6 +36,7 @@
     var chart = new CanvasJS.Chart("chartContainer",
     {
       zoomEnabled: true,
+	  animationEnabled: true,
       title:{
         text: "Try Zooming And Panning (with dates)"
       },
